@@ -179,8 +179,8 @@
       >
         <div class="max-w-screen-xl mx-auto px-2 md:px-4 lg:px-0">
           <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-6">P.H Paribahan</h1>
-            <p class="w-1/2 mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold mb-6">P.H Paribahan</h1>
+            <p class="md:w-1/2 mx-auto">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
@@ -188,26 +188,35 @@
           <!-- function section -->
           <div>
             <!-- Top__PART-->
-            <div class="flex bg-white p-8 rounded-3xl">
-              <!-- left -->
+            <div
+              class="flex flex-col-reverse md:flex-row bg-white p-4 md:p-8 rounded-3xl"
+            >
+              <!-- left__SIDE -->
               <div class="flex-1">
                 <!-- part-1 -->
                 <div class="flex justify-between items-center">
-                  <div class="flex items-center gap-3">
-                    <img src="./images/bus-logo.png" alt="bus logo" />
+                  <div class="flex items-center gap-5 md:gap-3">
+                    <img
+                      class="w-10 h-8 md:w-16 md:h-12"
+                      src="./images/bus-logo.png"
+                      alt="bus logo"
+                    />
                     <div>
-                      <h3 class="text-3xl font-bold">Greenline Paribahan</h3>
+                      <h3 class="text-xl md:text-3xl font-bold">
+                        Greenline Paribahan
+                      </h3>
                       <p>Coach-009-WEB ! AC_Business</p>
                     </div>
                   </div>
                   <button
-                    class="flex items-center gap-2 font-semibold bg-[#1DD10026] text-primary px-6 py-2 rounded-lg btn"
+                    class="flex items-center gap-2 font-semibold bg-[#1DD10026] text-primary px-3 md:px-6 py-1 md:py-2 rounded-lg btn"
                   >
-                    <img src="./images/seat-green.png" alt="" /> 40 Seats left
+                    <img src="./images/seat-green.png" alt="seat-green" />
+                    40 Seats left
                   </button>
                 </div>
                 <!-- part-2 form-->
-                <div class="bg-[#F7F8F8] p-8 mt-6 rounded-3xl">
+                <div class="bg-[#F7F8F8] p-4 md:p-8 mt-6 rounded-3xl">
                   <div>
                     <div class="flex justify-between font-semibold mb-3">
                       <p>Route</p>
@@ -227,27 +236,29 @@
                     ></p>
                   </div>
                   <div class="flex justify-between gap-2 mt-10">
-                    <button class="bg-[#0307120D] py-2 px-3 rounded">
+                    <button class="bg-[#0307120D] py-2 px-1 md:px-3 rounded">
                       Boarding Point - Laxmipur
                     </button>
-                    <button class="bg-[#0307120D] py-2 px-3 rounded">
+                    <button class="bg-[#0307120D] py-2 px-1 md:px-3 rounded">
                       Dropping Point - Bogura
                     </button>
-                    <button class="bg-[#0307120D] py-2 px-3 rounded">
+                    <button class="bg-[#0307120D] py-2 px-1 md:px-3 rounded">
                       Est. Time - 11 Hour
                     </button>
                   </div>
                 </div>
               </div>
-              <!-- right -->
-              <div class="flex justify-center items-center w-1/4">
-                <div class="text-center border">
+              <!-- right__RIGHT -->
+              <div
+                class="flex justify-center items-center md:w-1/4 mb-4 md:mb-0"
+              >
+                <div class="text-center">
                   <img
                     class="mx-auto mb-4"
                     src="./images/fare.png"
                     alt="fare"
                   />
-                  <h2 class="text-3xl font-bold mb-2">550 Taka</h2>
+                  <h2 class="text-2xl md:text-3xl font-bold mb-2">550 Taka</h2>
                   <p class="text-lg font-semibold">Per Seat</p>
                 </div>
               </div>
