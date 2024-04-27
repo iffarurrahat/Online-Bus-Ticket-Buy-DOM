@@ -44,24 +44,26 @@ applyBtn.addEventListener("click", function () {
 
 for (const seat of allSeatBtn) {
   seat.addEventListener("click", function (event) {
+    //<- more then 4 tickets purchase warning message
     if (count + 1 > 4) {
-      return alert("count larger then four");
+      return alert("You can't buy 5 tickets but you can now use coupon code😎");
     }
-
+    //<- remove disabled attribute when buy 4 seat tickets
     if (count + 1 === 4) {
       removeAttributeText("coupon-filed");
       removeAttributeText("apply-btn");
     }
-    // seat count
+
+    //<- seat count numbers
     count = count + 1;
     setInnerText("seat-purchase", count);
 
-    // seat bg_color
+    //<- seat bg_color
     seat.style.background = "#1DD100";
     seat.style.color = "white";
     seat.setAttribute("disabled", true);
 
-    // total__seat
+    //<- total__seat
     const totalSeat = parseInt(document.getElementById("total-seat").innerText);
     const newTotalSeat = totalSeat - 1;
     setInnerText("total-seat", newTotalSeat);
@@ -88,7 +90,7 @@ for (const seat of allSeatBtn) {
   });
 }
 
-// go home button
+//<- go home button
 // document.getElementById("go-home-btn").addEventListener("click", function () {
 //   window.location.href = "index.html";
 // });
