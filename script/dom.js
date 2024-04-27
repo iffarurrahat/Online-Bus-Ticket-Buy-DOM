@@ -44,14 +44,22 @@ applyBtn.addEventListener("click", function () {
 
 for (const seat of allSeatBtn) {
   seat.addEventListener("click", function (event) {
+    if (count + 1 > 4) {
+      return alert("count larger then four");
+    }
+
+    if (count + 1 === 4) {
+      removeAttributeText("coupon-filed");
+      removeAttributeText("apply-btn");
+    }
+    // seat count
+    count = count + 1;
+    setInnerText("seat-purchase", count);
+
     // seat bg_color
     seat.style.background = "#1DD100";
     seat.style.color = "white";
     seat.setAttribute("disabled", true);
-
-    // seat count
-    count = count + 1;
-    setInnerText("seat-purchase", count);
 
     // total__seat
     const totalSeat = parseInt(document.getElementById("total-seat").innerText);
@@ -75,8 +83,6 @@ for (const seat of allSeatBtn) {
     );
     totalAmount = ticketCost + totalAmount;
 
-    // document.getElementById("total-price").innerText = totalAmount;
-    // document.getElementById("grand-total").innerText = totalAmount;
     setInnerText("total-price", totalAmount);
     setInnerText("grand-total", totalAmount);
   });
