@@ -84,12 +84,6 @@ for (const seat of allSeatBtn) {
 
     const seatSerial = event.target.innerText;
     const appendContainer = document.getElementById("append-container");
-    // appendContainer.classList.add(
-    //   "outline",
-    //   "outline-1",
-    //   "text-[#03071233]",
-    //   "w-full"
-    // );
     const div = document.createElement("div");
     div.innerHTML = `
         <div class="flex items-center justify-between mb-2">
@@ -110,7 +104,7 @@ for (const seat of allSeatBtn) {
   });
 }
 
-//<- go home button
-// document.getElementById("go-home-btn").addEventListener("click", function () {
-//   window.location.href = "index.html";
-// });
+// <- go home button
+document.getElementById("go-home-btn").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
