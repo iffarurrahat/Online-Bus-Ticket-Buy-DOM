@@ -84,7 +84,7 @@
       </div>
     </header>
     <!-- banner section -->
-    <section class="max-w-screen-xl mx-auto px-2 md:px-4 lg:px-0">
+    <section class="max-w-screen-xl mx-auto px-2 md:px-4 lg:px-0 relative">
       <div
         class="bg-[url(images/banner.png)] rounded-3xl h-[400px] md:h-[500px] lg:h-[601px] object-cover flex justify-center items-center"
       >
@@ -102,8 +102,40 @@
           <button
             class="bg-primary py-2 md:py-4 px-5 md:px-7 rounded text-xl font-bold"
           >
-            Buy Tickets
+            <a href="#jump">Buy Tickets</a>
           </button>
+        </div>
+      </div>
+      <!-- Banner_down three part section absolute -bottom-20 left-[11%]-->
+      <div
+        class="md:flex justify-center gap-10 hidden md:block md:-mt-[7%] lg:-mt-[5%]"
+      >
+        <div
+          class="flex gap-4 items-center p-5 lg:p-10 rounded-3xl border-b-4 border-primary shadow bg-white"
+        >
+          <img src="./images/people.png" alt="people" />
+          <div>
+            <h1 class="text-3xl lg:text-4xl font-bold">500K+</h1>
+            <p class="text-lg mt-2">Registered users</p>
+          </div>
+        </div>
+        <div
+          class="flex gap-4 items-center p-5 lg:p-10 rounded-3xl border-b-4 border-primary shadow bg-white"
+        >
+          <img src="./images/ticket-cupon.png" alt="ticket cupon" />
+          <div>
+            <h1 class="text-3xl lg:text-4xl font-bold">1.7 lacks</h1>
+            <p class="text-lg mt-2">Tickets sold</p>
+          </div>
+        </div>
+        <div
+          class="flex gap-4 items-center p-5 lg:p-10 rounded-3xl border-b-4 border-primary shadow bg-white"
+        >
+          <img src="./images/stoppage.png" alt="stoppage" />
+          <div>
+            <h1 class="text-3xl lg:text-4xl font-bold">80K+</h1>
+            <p class="text-lg mt-2">Rental partners</p>
+          </div>
         </div>
       </div>
     </section>
@@ -179,7 +211,9 @@
       >
         <div class="max-w-screen-xl mx-auto px-2 md:px-4 lg:px-0">
           <div class="text-center mb-12">
-            <h1 class="text-3xl md:text-4xl font-bold mb-6">P.H Paribahan</h1>
+            <h1 class="text-3xl md:text-4xl font-bold mb-6" id="jump">
+              P.H Paribahan
+            </h1>
             <p class="md:w-1/2 mx-auto">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
@@ -212,7 +246,7 @@
                     class="flex items-center gap-2 font-semibold bg-[#1DD10026] text-primary px-3 md:px-6 py-1 md:py-2 rounded-lg btn"
                   >
                     <img src="./images/seat-green.png" alt="seat-green" />
-                    40 Seats left
+                    <span id="total-seat">40</span> Seats left
                   </button>
                 </div>
                 <!-- part-2 form-->
@@ -309,22 +343,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>A</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       A1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       A2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       A3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       A4
                     </button>
@@ -333,22 +367,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>B</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       B1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       B2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       B3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       B4
                     </button>
@@ -357,22 +391,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>C</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       C1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       C2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       C3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       C4
                     </button>
@@ -381,22 +415,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>D</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       D1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       D2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       D3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       D4
                     </button>
@@ -405,22 +439,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>E</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       E1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       E2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       E3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       E4
                     </button>
@@ -429,22 +463,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>F</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       F1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       F2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       F3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       F4
                     </button>
@@ -453,22 +487,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>G</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       G1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       G2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       G3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       G4
                     </button>
@@ -477,22 +511,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>H</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
-                      h1
+                      H1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       H2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       H3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       H4
                     </button>
@@ -501,22 +535,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>I</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       I1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       I2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       I3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       I4
                     </button>
@@ -525,22 +559,22 @@
                   <div class="flex items-center justify-between gap-2 md:gap-5">
                     <p>J</p>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       J1
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       J2
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       J3
                     </button>
                     <button
-                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg"
+                      class="bg-[#F7F8F8] py-2 md:py-3 px-4 md:px-8 rounded-lg seat-btn"
                     >
                       J4
                     </button>
@@ -565,8 +599,9 @@
                         <p>
                           Seat
                           <sup
+                            id="seat-purchase"
                             class="bg-primary text-white px-2 text-[10px] rounded-lg"
-                            >2</sup
+                            >0</sup
                           >
                         </p>
                         <p>Class</p>
@@ -576,15 +611,10 @@
                         class="outline-dashed outline-1 text-[#03071233] w-full"
                       ></p>
                     </div>
-                    <div class="flex items-center justify-between mt-10 mb-2">
-                      <p>C2</p>
+                    <div id="append-container" class="mt-10">
+                      <!-- <p>C2</p>
                       <p>Economoy</p>
-                      <p>550</p>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <p>C2</p>
-                      <p>Economoy</p>
-                      <p>550</p>
+                      <p>550</p> -->
                     </div>
                     <p
                       class="outline outline-1 text-[#03071233] w-full my-3"
@@ -686,6 +716,7 @@
     </footer>
 
     <!-- script files -->
+    <script src="./script/utility.js"></script>
     <script src="./script/dom.js"></script>
   </body>
 </html>

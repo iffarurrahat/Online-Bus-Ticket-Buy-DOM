@@ -10,4 +10,6 @@ Using Package /Tools:
 
 Using FontFamily:
 
-- Google font ()
+- Google font (Raleway, Inter)
+
+-[note: functionality part coming soon]
