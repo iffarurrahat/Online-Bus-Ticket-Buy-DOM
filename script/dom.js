@@ -44,6 +44,20 @@ applyBtn.addEventListener("click", function () {
 
 for (const seat of allSeatBtn) {
   seat.addEventListener("click", function (event) {
+    // <- add css
+    if (count + 1) {
+      const outLine = document.getElementById("outline");
+      outLine.removeAttribute("hidden");
+    }
+
+    // <-next button
+    const numberFiled = document.getElementById("number-filed");
+    numberFiled.addEventListener("keyup", function () {
+      if (numberFiled.value.length && count + 1) {
+        removeAttributeText("next-btn");
+      }
+    });
+
     //<- more then 4 tickets purchase warning message
     if (count + 1 > 4) {
       return alert("You can't buy 5 tickets but you can now use coupon code😎");
@@ -70,6 +84,12 @@ for (const seat of allSeatBtn) {
 
     const seatSerial = event.target.innerText;
     const appendContainer = document.getElementById("append-container");
+    // appendContainer.classList.add(
+    //   "outline",
+    //   "outline-1",
+    //   "text-[#03071233]",
+    //   "w-full"
+    // );
     const div = document.createElement("div");
     div.innerHTML = `
         <div class="flex items-center justify-between mb-2">
