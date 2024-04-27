@@ -2,6 +2,46 @@ const allSeatBtn = document.getElementsByClassName("seat-btn");
 let count = 0;
 let totalAmount = 0;
 
+// apply button
+const applyBtn = document.getElementById("apply-btn");
+applyBtn.addEventListener("click", function () {
+  const couponFiled = document.getElementById("coupon-filed");
+  const couponFiledValue = couponFiled.value;
+  couponFiled.value = "";
+
+  const newDiscount = (totalAmount * 15) / 100;
+  const coupleDiscount = (totalAmount * 20) / 100;
+
+  if (couponFiledValue === "NEW15") {
+    const discountAmount = document.getElementById("discount-amount");
+    const div = document.createElement("div");
+    div.innerHTML = `
+        <div class="flex justify-between font-bold mt-2">
+        <p>Discount</p>
+        <p> -${newDiscount}</p>
+        </div>    
+    `;
+    discountAmount.appendChild(div);
+    const total = (totalAmount - newDiscount).toFixed(2);
+    setInnerText("grand-total", total);
+  } else if (couponFiledValue === "Couple 20") {
+    const discountAmount = document.getElementById("discount-amount");
+    const div = document.createElement("div");
+    div.innerHTML = `
+        <div class="flex justify-between font-bold mt-2">
+        <p>Discount</p>
+        <p> -${coupleDiscount}</p>
+        </div>    
+    `;
+    discountAmount.appendChild(div);
+    const total = (totalAmount - coupleDiscount).toFixed(2);
+    setInnerText("grand-total", total);
+  } else {
+    alert("Coupon Code Wrong");
+    return;
+  }
+});
+
 for (const seat of allSeatBtn) {
   seat.addEventListener("click", function (event) {
     // seat bg_color
@@ -34,9 +74,15 @@ for (const seat of allSeatBtn) {
       document.getElementById("ticket-cost").innerText
     );
     totalAmount = ticketCost + totalAmount;
-    console.log(totalAmount);
 
+    // document.getElementById("total-price").innerText = totalAmount;
+    // document.getElementById("grand-total").innerText = totalAmount;
     setInnerText("total-price", totalAmount);
     setInnerText("grand-total", totalAmount);
   });
 }
+
+// go home button
+// document.getElementById("go-home-btn").addEventListener("click", function () {
+//   window.location.href = "index.html";
+// });

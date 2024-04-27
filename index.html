@@ -620,15 +620,16 @@
                         <p>Price</p>
                         <p>BDT <span id="total-price">0</span></p>
                       </div>
+                      <div id="discount-amount"></div>
                       <div class="mt-5 relative">
                         <input
                           id="coupon-filed"
                           class="w-full py-3 pl-5 rounded-lg focus:outline-none"
                           type="text"
                           placeholder="Have any coupon?"
-                          disabled
                         />
                         <button
+                          id="apply-btn"
                           class="bg-primary px-5 py-2 rounded-lg text-white absolute top-1 right-1"
                         >
                           Apply
@@ -666,10 +667,33 @@
                       />
                     </div>
                     <button
+                      id="next-btn"
+                      onclick="my_modal_1.showModal()"
                       class="bg-primary py-3 w-full rounded-xl mt-5 text-white font-semibold"
                     >
                       Next
                     </button>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <dialog id="my_modal_1" class="modal">
+                      <form
+                        method="dialog"
+                        class="modal-box text-center py-10 md:py-20"
+                      >
+                        <img class="mx-auto" src="./images/congo.png" alt="" />
+                        <h1 class="text-3xl md:text-5xl font-bold mt-10 mb-4">
+                          Congratulations
+                        </h1>
+                        <p class="text-xl text-semi-black mb-4 lg:mb-10">
+                          Your Purchase the product
+                        </p>
+                        <button
+                          id="go-home-btn"
+                          class="btn btn-secondary text-white capitalize text-lg px-11"
+                        >
+                          Go Home
+                        </button>
+                      </form>
+                    </dialog>
                     <div class="flex justify-around mt-4">
                       <p class="underline">Terms and Conditions</p>
                       <p class="underline">Cancellation Policy</p>
