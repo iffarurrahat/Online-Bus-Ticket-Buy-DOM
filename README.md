@@ -12,4 +12,4 @@ Using FontFamily:
 
 - Google font (Raleway, Inter)
 
--[note: functionality part coming soon]
+-[note: functionality part under working]
