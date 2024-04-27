@@ -611,24 +611,22 @@
                         class="outline-dashed outline-1 text-[#03071233] w-full"
                       ></p>
                     </div>
-                    <div id="append-container" class="mt-10">
-                      <!-- <p>C2</p>
-                      <p>Economoy</p>
-                      <p>550</p> -->
-                    </div>
+                    <div id="append-container" class="mt-10"></div>
                     <p
                       class="outline outline-1 text-[#03071233] w-full my-3"
                     ></p>
                     <div class="mt-5">
                       <div class="flex justify-between font-bold">
                         <p>Price</p>
-                        <p>BDT 1100</p>
+                        <p>BDT <span id="total-price">0</span></p>
                       </div>
                       <div class="mt-5 relative">
                         <input
+                          id="coupon-filed"
                           class="w-full py-3 pl-5 rounded-lg focus:outline-none"
                           type="text"
-                          placeholder="Have any copupon?"
+                          placeholder="Have any coupon?"
+                          disabled
                         />
                         <button
                           class="bg-primary px-5 py-2 rounded-lg text-white absolute top-1 right-1"
@@ -638,7 +636,7 @@
                       </div>
                       <div class="flex justify-between font-bold mt-5">
                         <p>Grand Total</p>
-                        <p>BDT 1100</p>
+                        <p>BDT <span id="grand-total">0</span></p>
                       </div>
                     </div>
                   </div>
