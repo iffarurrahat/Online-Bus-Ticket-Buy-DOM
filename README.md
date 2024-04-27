@@ -11,5 +11,3 @@ Using Package /Tools:
 Using FontFamily:
 
 - Google font (Raleway, Inter)
-
--[note: functionality part under working]
