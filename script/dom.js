@@ -24,6 +24,9 @@ applyBtn.addEventListener("click", function () {
     discountAmount.appendChild(div);
     const total = (totalAmount - newDiscount).toFixed(2);
     setInnerText("grand-total", total);
+
+    // couponFiled disabled
+    setAttributeText("coupon-filed");
   } else if (couponFiledValue === "Couple 20") {
     const discountAmount = document.getElementById("discount-amount");
     const div = document.createElement("div");
@@ -36,6 +39,9 @@ applyBtn.addEventListener("click", function () {
     discountAmount.appendChild(div);
     const total = (totalAmount - coupleDiscount).toFixed(2);
     setInnerText("grand-total", total);
+
+    // couponFiled disabled
+    setAttributeText("coupon-filed");
   } else {
     alert("Coupon Code Wrong");
     return;

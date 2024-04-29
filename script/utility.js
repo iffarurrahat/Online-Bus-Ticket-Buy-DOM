@@ -5,3 +5,7 @@ function setInnerText(elementId, value) {
 function removeAttributeText(elementId) {
   document.getElementById(elementId).removeAttribute("disabled", true);
 }
+
+function setAttributeText(elementId) {
+  document.getElementById(elementId).setAttribute("disabled", true);
+}
